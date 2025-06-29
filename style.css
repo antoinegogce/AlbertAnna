@@ -160,6 +160,34 @@ body {
   
   /* Responsive design */
   @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      padding: 2rem 1rem;
+      gap: 2rem;
+      min-height: 100vh;
+    }
+    
+    .image-arch {
+      width: 250px;
+      height: 375px;
+      order: 1;
+    }
+    
+    .text-container {
+      order: 2;
+      width: 100%;
+    }
+    
+    .main-text {
+      font-size: 2.5rem;
+      writing-mode: horizontal-tb;
+      transform: none;
+    }
+    
+    .arrow-down {
+      margin: 1.5rem auto 0;
+    }
+    
     .content-grid {
       grid-template-columns: 1fr;
       gap: 2rem;
@@ -175,6 +203,26 @@ body {
     
     .gallery-item:nth-child(1) {
       grid-column: 1;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 1rem;
+      gap: 1.5rem;
+    }
+    
+    .image-arch {
+      width: 200px;
+      height: 300px;
+    }
+    
+    .main-text {
+      font-size: 2rem;
+    }
+    
+    .section-title {
+      font-size: 2rem;
     }
   }
   
